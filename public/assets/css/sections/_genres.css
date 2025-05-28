@@ -1,0 +1,71 @@
+.genres-section {
+  padding: 20px 0;
+}
+
+.genres-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 20px;
+}
+.genre-card {
+  background-color: var(--color-surface);
+  padding: 16px;
+  font-size: 20px;
+  border-radius: var(--radius-default);
+  box-shadow: var(--shadow-default);
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.genre-card:hover {
+  color: var(--color-accent);
+  transform: translateY(-3px);
+}
+
+.genre-detail {
+  padding: 20px 0;
+}
+.genre-detail .tracks-list {
+  margin-top: 16px;
+}
+
+.admin-section__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.admin-genres-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+.admin-genre-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-default);
+  box-shadow: var(--shadow-default);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.admin-genre-card__info {
+  margin-bottom: 0.75rem;
+}
+.admin-genre-card__id {
+  font-size: 0.75rem;
+  color: var(--color-muted);
+}
+.admin-genre-card__name {
+  margin: 0.25rem 0 0;
+  font-size: 1.125rem;
+  color: var(--color-text);
+}
+
+.admin-genre-card__actions {
+  display: flex;
+  gap: 0.5rem;
+}
+.inline-form {
+  margin: 0;
+}

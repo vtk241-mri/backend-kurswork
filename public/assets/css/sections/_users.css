@@ -1,0 +1,83 @@
+.admin-section__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px 20px;
+  margin-bottom: 1rem;
+}
+
+.admin-users-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  margin-top: 24px;
+}
+
+.admin-user-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-default);
+  box-shadow: var(--shadow-default);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.admin-user-card__avatar {
+  width: 100%;
+  padding-top: 100%; /* квадрат */
+  position: relative;
+  background: var(--color-light);
+}
+.admin-user-card__avatar img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.admin-user-card__avatar--placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--color-muted);
+}
+
+.admin-user-card__info {
+  padding: 1rem;
+  flex-grow: 1;
+}
+.admin-user-card__name {
+  margin: 0 0 0.25rem;
+  font-size: 1.125rem;
+  color: var(--color-text);
+}
+.admin-user-card__email {
+  margin: 0 0 0.5rem;
+  font-size: 0.875rem;
+  color: var(--color-muted);
+}
+.admin-user-card__role {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--color-text);
+}
+
+.admin-user-card__actions {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: var(--color-background);
+}
+.inline-form {
+  margin: 0;
+}

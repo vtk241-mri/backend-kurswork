@@ -1,0 +1,47 @@
+.admin-comments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.admin-comment-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-default);
+  box-shadow: var(--shadow-default);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.admin-comment-card__meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: var(--color-muted);
+  margin-bottom: 0.5rem;
+}
+
+.admin-comment-card__user,
+.admin-comment-card__track {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+  color: var(--color-text);
+}
+
+.admin-comment-card__content {
+  flex-grow: 1;
+  margin: 0.5rem 0;
+  line-height: 1.4;
+  color: var(--color-text);
+}
+
+.admin-comment-card__actions {
+  text-align: right;
+  margin-top: auto;
+}
+
+.admin-comment-card__actions .admin-btn {
+  padding: 0.3rem 0.6rem;
+  font-size: 0.875rem;
+}
