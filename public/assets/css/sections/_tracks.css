@@ -65,7 +65,7 @@
 }
 .track-detail__cover img {
   width: 100%;
-  max-width: 400px;
+  max-width: 250px;
   border-radius: var(--radius-default);
   display: block;
   margin: 0 auto 1.5rem;
